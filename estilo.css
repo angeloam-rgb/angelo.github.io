@@ -1,0 +1,68 @@
+body{
+background-image: linear-gradient(to right, green, blue);
+background-size: 400% 400%;
+animation: moverDegradado 10s ease-in-out infinite;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin:0;
+}
+@keyframes moverDegradado{
+           0% { background-position: 0% 50%; }
+           50% { background-position: 100% 50%; }
+           100% { background-position: 0% 50%; }
+}
+.content{
+background-color: White;
+padding: 3vw;
+border-radius: 2vw;
+box-shadow 0 0 3vw rgba (o,125,0,0.7);
+text-aling: center;
+width: 80vw
+max-width: 500px;
+}
+audio{
+width:100%;
+margin-top: 2vh;
+}
+
+#fileInput{
+width:100%;
+margin-top :2vh;
+display:block;
+}
+.controls button{
+background-color: orange;
+color: white;
+border: none;
+padding: 1.5vw 3vw;
+font-size: 2vw;
+cursor: pointer;
+margin:0 1vw;
+border-radius: 0.5vw;
+}
+.controls button:hover{
+background-color: yellow;
+color: red;
+}
+#playlist{
+list-style: none;
+padding: 0;
+margin-top: 2vh;
+max-height: 30vh;
+overflow-y: auto;
+text-algin: left;
+}
+#playlist li{
+background-color: Black;
+padding: 1vh 2vw;
+margin-bottom: 1vh;
+border-radius: 0.5vh;
+cursor: pointer;
+color: Beige;
+}
+#playlist li.active{
+background- Beige;
+color: white;
+}
